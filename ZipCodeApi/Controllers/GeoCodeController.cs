@@ -134,7 +134,7 @@ namespace ZipCodeApi.Controllers
 
             return Content(result, "application/json");
         }
-
+        //GET: json format
         [Route("geocode/json/address/{address}/{token}")]
         public JsonResult GetAddressJSON(string address)
         {
@@ -223,7 +223,7 @@ namespace ZipCodeApi.Controllers
 
             return Json(response, JsonRequestBehavior.AllowGet);
         }
-
+        //GET: xml format
         [Route("geocode/xml/address/{address}/{token}")]
         public Extensions.XmlResult GetAddressXML(string address, string token)
         {
