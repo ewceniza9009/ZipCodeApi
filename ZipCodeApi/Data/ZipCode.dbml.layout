@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ZipCode">
+  <DataContextMoniker Name="/ZipCodeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a4a04744-b458-49c5-9df2-5811d6f7bc83" absoluteBounds="4.125, 2.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ZipCodeDataContext/ZipCode" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62b6b42b-64b1-4aac-9aca-04ac405a749e" absoluteBounds="4.14, 3.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

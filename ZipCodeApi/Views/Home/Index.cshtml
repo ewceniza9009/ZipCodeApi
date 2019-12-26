@@ -1,0 +1,40 @@
+﻿<div class="jumbotron">
+    <h1>AccountMate</h1>
+    <p class="lead">Geo location API services</p>
+
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <div class="form-group">
+            <div class="btn-group">
+                <input id="searchInput" type="search" class="form-control" placeholder="Input zipcode..." name="zipCode" value="@ViewBag.ZipCode">
+                <span id="searchClear" class="glyphicon glyphicon-remove"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="city">City: </label>
+            <input type="text" class="form-control" id="city" name="city" disabled="disabled" value="@ViewBag.City" />
+        </div>
+        <div class="form-group">
+            <label for="state">State: </label>
+            <input type="text" class="form-control" id="state" name="state" disabled="disabled" value="@ViewBag.State" />
+        </div>
+
+        <hr />
+
+        <input type="submit" class="btn btn-primary" value="Submit" />
+    }
+</div>
+
+<script src="https://pagecdn.io/lib/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#searchClear").click(function () {
+            $("#searchInput").val('');
+
+            $("#city").val('NA');
+            $("#state").val('NA');
+        });
+    }); 
+</script>
+
