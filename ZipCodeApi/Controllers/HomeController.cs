@@ -63,12 +63,17 @@ namespace ZipCodeApi.Controllers
                     //    .FirstOrDefault();
 
                     ViewBag.ZipCode = address;
-                    ViewBag.City = addressData == null ? "NA" : addressData
+
+                    if(addressData != null && addressData.Count != 0)
+                    {
+                        ViewBag.City = addressData
                         .OrderByDescending(o => o.locality)
                         .FirstOrDefault().locality;
-                    ViewBag.State = addressData == null ? "NA" : addressData
-                        .OrderByDescending(o => o.locality)
-                        .FirstOrDefault().administrative_area_level_1;
+
+                        ViewBag.State = addressData
+                            .OrderByDescending(o => o.locality)
+                            .FirstOrDefault().administrative_area_level_1;
+                    }
                 }
             }
 
