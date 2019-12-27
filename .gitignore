@@ -344,3 +344,4 @@ healthchecksdb
 
 # Secure
 .ZipCodeApi/Authorization/SecureManager.cs
+ZipCodeApi/Authorization/SecureManager.cs
