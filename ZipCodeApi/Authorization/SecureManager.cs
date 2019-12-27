@@ -52,7 +52,7 @@ namespace ZipCodeApi.Authorization
                 {
                     string hash = parts[0];
                     string username = parts[1];
-                    string password = "ampass";
+                    string password = "am_pass";
 
                     string computedToken = GenerateToken(username, password);
 

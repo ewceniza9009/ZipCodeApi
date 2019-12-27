@@ -340,7 +340,7 @@ ASALocalRun/
 healthchecksdb
 
 # xml
-ZipCode.xml
+.Data/ZipCode.xml
 
-#Secure
-SecureManager.cs
+# Secure
+.ZipCodeApi/Authorization/SecureManager.cs
